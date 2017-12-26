@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Animated Heros</title>
+
+	<!-- jQuery CDN link. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<!-- Bootstrap CDN link. -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  	<!-- Google fonts -->
+  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Krona One">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- Header of the webpage -->
+		<div class="row title">
+			<h1 class="pull-left">Marvel Heros GIF Collection</h1>
+			<img class="header-img" src="assets/images/spider.gif">
+		</div>
+
+		<!-- Buttons for hero rendered here -->
+		<div class="row list-hero">	
+	        <div id="hero-list"></div>		   
+		</div>
+		
+		<div class="row">
+
+			<!-- hero images displayed here -->
+			<div class="col-md-8 image-section clearfix">
+				<h4>Images</h4>
+				<div class="text-center" id="hero-images">Click on hero button to see the pictures</div><hr>
+			</div>
+
+			<!-- User input box to take new hero name -->
+			<div class="col-md-3 col-md-offset-1 text-center search-box">
+				<h5>Add a hero</h5>
+				<input type="text" id="hero-name"><br>
+				<button type="button" id="submit-hero" class="btn btn-primary submit-btn">Submit</button>
+			</div>		
+		</div>
+	</div>
+	<script src="assets/javascript/javascript.js"></script>
+</body>
+</html>

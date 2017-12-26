@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "Heros";
+	src: url(hero.ttf) format("truetype");
+}
+
+.title h1{
+	font-family: "Heros", sans-serif;
+	font-size: 75px;
+}
+
+@-webkit-keyframes masked-animation {
+	0% {background-position: left;}
+	100% {background-position: right;}
+}
+
+.header-img {
+	height: 100px; 
+	float: right;
+}
+
+.list-hero{
+	padding: 20px;
+	background: #C6E5EA;
+	border: 2px solid #49696E;
+}
+
+.image-section{
+	padding: 20px;
+	margin-top: 30px;
+	border-width: 0 14px;
+}
+
+.image-section h4{
+	padding: 20px 0;
+	font-size: 140%;
+	text-align: center;
+	color: black;
+	margin: -20px auto 20px auto;
+	background: white;
+	border-radius: 50%;
+	border: solid;
+	width: 60%;
+}
+
+#hero-images {
+	font-family: 'Krona One', serif;
+}
+
+.hero-img{
+	width: 200px;
+	height: 100px;
+	margin-left: 30px;
+	margin-top: 20px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.search-box{
+	background: #C6E5EA;
+	border: 2px solid #49696E;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+input[type=text]{
+	margin-bottom: 5px; 
+}
+
+.heros-btn, .submit-btn {
+	margin: 5px 3px; 
+	background-color: #577D84;
+	border-color: #49696E;
+}
+
+footer { 
+	margin-top: 20px;
+}
