@@ -35,6 +35,30 @@ The GIPHY API is used to make a dynamic web page that populates with gifs. The w
 * Step One: Go to https://developers.giphy.com/docs/ and fill out and submit the form
 * Step Two: Go to your dashboard and get your API key
 
+* Inside your .js file insert the following code:
+
+``` JavaScript
+
+//Display heros using giphy API
+function displayHeros() {
+
+	var API_Key = " your API key "
+
+	//Get the name of hero from the button clicked and add to the URL
+	var heroName = $(this).attr("data-name");
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + heroName + " Marvel&api_key=" + API_Key + ";
+
+	// Ajax call
+	$.ajax({
+		url: queryURL,
+		method: "GET"
+	}).done(function (heroGIF) {
+			Content...
+	});
+}
+
+```
+
 ### Built With
 
 * Sublime Text - Text Editor
